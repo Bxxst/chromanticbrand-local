@@ -1,0 +1,102 @@
+.grid-row-2{
+    display: grid;
+    width: 90vw;
+    margin-inline: auto;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
+.button{
+    background-color: rgba(0, 0, 0, 0.568);
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    color: blueviolet;
+    font-size: 18px;
+    padding: 16px 30px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.grid-row-2 div{
+    padding: 20px;
+    width: calc(100% - 20px);
+}
+
+.grid-row-2 h2{
+    margin-top: 70px;
+}
+
+.grid-row-2 p.itemprice{
+    font-size: 18px;
+    color: #a1a1a1;
+}
+
+.grid-row-2 p.description{
+    max-width: 80%;
+}
+
+.grid-row-2 img{
+    width: calc(100% - 40px);
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px white);
+}
+
+.verticalflex{
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.productTreating{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5em;
+}
+
+.productTreating div{
+    margin-inline: auto;
+    width: 70%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.productTreating img{
+    max-width: 100px;
+}
+
+@media screen and (max-width:440px) {
+    .grid-row-2{
+        margin-top: 40px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-row-2 div{
+        align-content: center;
+    }
+
+    .productTreating{
+        width: calc(100% - 10px);
+        padding: 5px;
+    }
+
+    .productTreating div{
+        align-items: center;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productTreating img{
+        max-width: 100px;
+        max-height: 150px;
+    }
+}

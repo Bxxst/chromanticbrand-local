@@ -1,0 +1,43 @@
+﻿.itemContainer{
+    width: 100%;
+    padding: 5px;
+}
+
+.itemContainer:hover{
+    cursor: pointer;
+}
+
+.itemContainer .photo{
+    width: 100%;
+}
+
+.itemContainer .photo img:hover{
+    transition: 100ms;
+    filter: drop-shadow(0 0 8px #ffffff);
+}
+
+.itemContainer .photo img{
+    max-width: 400px;
+    max-height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px #ffffff90);
+    transition: 100ms;
+}
+
+/* .itemContainer .info{
+    
+} */
+
+.itemContainer .info *{
+    height: auto;
+    margin: 7px;
+}
+
+.itemContainer .info h3{
+    color: #ffffff;
+}
+
+.itemContainer .info p{
+    color: #a1a1a1;
+}

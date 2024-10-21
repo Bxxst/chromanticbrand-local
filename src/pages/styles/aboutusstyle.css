@@ -1,0 +1,36 @@
+.aboutusContent{
+    text-align: center;
+    color: white;
+}
+
+.aboutusImg{
+    object-fit: fill;
+}
+
+.grid{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    justify-items: center;
+    align-content: center;
+    height: 90vh;
+}
+
+.grid div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    /*border: 1px solid red;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.grid div img{
+    object-fit: contain;
+    height: 100%;
+}
+
+.grid div hr{
+    width: 100%;
+}

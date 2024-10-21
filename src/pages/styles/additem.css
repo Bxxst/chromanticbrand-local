@@ -1,0 +1,48 @@
+.additemform{
+    position: relative;
+    background-color: rgb(83, 4, 156);
+    border-radius: 10px;
+    border: 2px solid rgb(115, 17, 207);
+    width: 60%;
+    height: calc(100vh - 24px);
+    padding: 10px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.additemform * {
+    width: calc(100% - 20px);
+}
+
+.additemform input{
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+.additemform input[type=submit]{
+    width: 50%;
+    background-color: slateblue;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    position: absolute;
+    bottom: 40px;
+}
+
+.additemform input[type=submit]:hover{
+    cursor: pointer;
+    background-color: rgb(138, 125, 224);
+    transition: 500ms;
+}
+
+.additemform textarea{
+    padding: 5px 10px;
+    border-radius: 10px;
+    min-height: 150px;
+    color: black;
+}
